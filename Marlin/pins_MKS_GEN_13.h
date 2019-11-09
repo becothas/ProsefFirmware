@@ -51,6 +51,7 @@
   #define PS_ON_PIN        4
 #endif
 
+
 #include "pins_RAMPS.h"
 
 //
@@ -140,5 +141,18 @@
 
   // white                BLUE-LED
   #define STAT_LED_BLUE_PIN 17
-
 #endif
+
+#if HAS_DRIVER(TMC2130)
+    #undef X_MAX_PIN 
+    #define X_MAX_PIN 3
+
+    #undef Y_MAX_PIN
+    #define Y_MAX_PIN 2
+    #undef X_CS_PIN
+    #define X_CS_PIN 59
+    
+    #undef Y_CS_PIN
+    #define Y_CS_PIN 63
+  #endif
+
