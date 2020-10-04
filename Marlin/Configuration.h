@@ -492,9 +492,9 @@
     #define DEFAULT_Kd_LIST { 114.00, 112.0 }
   #else
 //Prosef MK2 DICE Hotend
-#define DEFAULT_Kp 7.09
-#define DEFAULT_Ki 0.49
-#define DEFAULT_Kd 25.75
+#define DEFAULT_Kp 6.74
+#define DEFAULT_Ki 0.45
+#define DEFAULT_Kd 25.27
 
   // Ultimaker
   //#define DEFAULT_Kp 22.2
